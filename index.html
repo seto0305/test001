@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌ってみたMIX 練習用音源募集</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            purple: '#8b5cf6',
+                            cyan: '#06b6d4',
+                            dark: '#090a10',
+                            card: '#121420',
+                            border: '#1f2438'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #090a10;
+            color: #f3f4f6;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.08) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        .glow-box {
+            box-shadow: 0 0 30px -5px rgba(139, 92, 246, 0.15);
+        }
+        .glow-accent {
+            box-shadow: 0 0 20px 0 rgba(6, 182, 212, 0.25);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- Navigation / Header -->
+    <header class="border-b border-cyber-border bg-cyber-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyber-purple to-cyber-cyan flex items-center justify-center shadow-lg glow-accent">
+                    <i class="fa-solid fa-sliders text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-wider text-white block leading-none">MIX LAB</span>
+                    <span class="text-[10px] text-cyan-400 font-mono tracking-widest uppercase">Practice & Review</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/30 px-3.5 py-1.5 rounded-full text-emerald-400 text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>音源受付中</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10 flex-grow w-full space-y-12">
+
+        <!-- Hero Section -->
+        <section class="text-center space-y-6 pt-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyber-purple/10 border border-cyber-purple/30 text-cyber-purple text-xs font-semibold">
+                <i class="fa-solid fa-compact-disc animate-spin" style="animation-duration: 8s;"></i>
+                <span>無償歌ってみたMIX 練習用音源募集</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white leading-tight">
+                あなたの「歌声」で<br>
+                <span class="bg-gradient-to-r from-cyber-purple via-indigo-300 to-cyber-cyan bg-clip-text text-transparent">
+                    MIX技術をアップデート
+                </span>
+            </h1>
+            
+            <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                MIX技術向上とブログ等での解説・ビフォーアフター実績公開を目的とした企画です。<br class="hidden sm:block">
+                以下の利用条件をご確認の上、練習素材として音源を提供していただける方を募集しています。
+            </p>
+
+            <!-- Important Feature Badges -->
+            <div class="flex flex-wrap justify-center gap-2.5 pt-2">
+                <span class="px-3.5 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-gift text-emerald-400"></i> 完全無料
+                </span>
+                <span class="px-3.5 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-amber-400"></i> 納期指定不可
+                </span>
+                <span class="px-3.5 py-1.5 rounded-lg bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-ban text-rose-400"></i> 修正リクエスト不可
+                </span>
+                <span class="px-3.5 py-1.5 rounded-lg bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyan-300 text-xs font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-cyber-cyan"></i> ブログ・実績掲載
+                </span>
+            </div>
+        </section>
+
+        <!-- Critical Rules Card Section -->
+        <section class="bg-gradient-to-br from-rose-950/20 via-cyber-card to-cyber-card border border-rose-500/30 rounded-2xl p-6 md:p-8 relative overflow-hidden glow-box">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex items-center space-x-3 mb-6 border-b border-cyber-border pb-4">
+                <div class="w-9 h-9 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-white tracking-wide">ご応募前の必須お約束事項</h2>
+                    <p class="text-xs text-gray-400">当企画は「受託制作」ではなく「個人の練習・検証」となります。</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- Rule 1 -->
+                <div class="bg-cyber-dark/60 border border-cyber-border rounded-xl p-5 space-y-2">
+                    <div class="text-amber-400 font-bold text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-hourglass-half"></i> 1. 納期指定不可
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        各種プラグラグインの検証や試行錯誤を行いながら作業するため、<strong>「〇日までに欲しい」等の期限指定や催促にはお応えできません。</strong>
+                    </p>
+                </div>
+
+                <!-- Rule 2 -->
+                <div class="bg-cyber-dark/60 border border-cyber-border rounded-xl p-5 space-y-2">
+                    <div class="text-rose-400 font-bold text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-xmark-circle"></i> 2. 修正（リテイク）不可
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        練習プロセスそのものを目的としているため、<strong>納品後の修正要望・やり直し・微調整のリクエストはお受けできません。</strong>
+                    </p>
+                </div>
+
+                <!-- Rule 3 -->
+                <div class="bg-cyber-dark/60 border border-cyber-border rounded-xl p-5 space-y-2">
+                    <div class="text-cyber-cyan font-bold text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-share-nodes"></i> 3. ブログ・実績掲載
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        完成音源およびMIX前後の比較音源は、<strong>本ブログの記事、ポートフォリオ、SNS等で練習記録として公開</strong>いたします。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements and Work Scope Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Audio Rules -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-6 space-y-4">
+                <h2 class="text-base font-bold text-white flex items-center gap-2 border-b border-cyber-border pb-3">
+                    <i class="fa-solid fa-microphone-lines text-cyber-cyan"></i> 音源提出時のルール
+                </h2>
+                <ul class="space-y-3 text-xs text-gray-300">
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-check-double text-cyber-cyan mt-0.5"></i>
+                        <div>
+                            <strong class="text-white">ボーカル音源:</strong> WAV形式 / モノラル / ハモりや加工はエフェクトOFFで書き出し
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-check-double text-cyber-cyan mt-0.5"></i>
+                        <div>
+                            <strong class="text-white">頭出し設定:</strong> 伴奏音源と開始位置（0秒時点）を揃えて出力してください
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-check-double text-cyber-cyan mt-0.5"></i>
+                        <div>
+                            <strong class="text-white">伴奏音源 (Off Vocal):</strong> 本家様が公式配布・使用許可している音源（WAV/MP3）
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-check-double text-cyber-cyan mt-0.5"></i>
+                        <div>
+                            <strong class="text-white">アップロード:</strong> ギガファイル便等にまとめてアップロードし、URLをご用意ください
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MIX Scope -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-6 space-y-4">
+                <h2 class="text-base font-bold text-white flex items-center gap-2 border-b border-cyber-border pb-3">
+                    <i class="fa-solid fa-wand-magic-sparkles text-cyber-purple"></i> 作業内容
+                </h2>
+                <div class="grid grid-cols-2 gap-2.5 text-xs">
+                    <div class="bg-cyber-dark/80 p-3 rounded-xl border border-cyber-border">
+                        <i class="fa-solid fa-wave-square text-cyber-cyan mb-1.5 block text-sm"></i>
+                        <strong class="text-white block">ノイズ除去</strong>
+                        リップノイズ・環境音カット
+                    </div>
+                    <div class="bg-cyber-dark/80 p-3 rounded-xl border border-cyber-border">
+                        <i class="fa-solid fa-music text-cyber-purple mb-1.5 block text-sm"></i>
+                        <strong class="text-white block">ピッチ・タイミング</strong>
+                        補正ソフトによる整律
+                    </div>
+                    <div class="bg-cyber-dark/80 p-3 rounded-xl border border-cyber-border">
+                        <i class="fa-solid fa-sliders text-cyber-cyan mb-1.5 block text-sm"></i>
+                        <strong class="text-white block">EQ & コンプ</strong>
+                        質感を整える音響処理
+                    </div>
+                    <div class="bg-cyber-dark/80 p-3 rounded-xl border border-cyber-border">
+                        <i class="fa-solid fa-cloud text-cyber-purple mb-1.5 block text-sm"></i>
+                        <strong class="text-white block">空間エフェクト</strong>
+                        リバーブ・ディレイ・響き
+                    </div>
+                </div>
+                <p class="text-[11px] text-gray-400">※仕上げとして簡易マスタリング（音圧調整）を行った状態で納品いたします。</p>
+            </div>
+        </section>
+
+        <!-- Interactive Template Generator Section -->
+        <section class="bg-cyber-card border border-cyber-border rounded-2xl p-6 md:p-8 space-y-6 glow-box">
+            <div class="border-b border-cyber-border pb-4">
+                <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-code text-cyber-cyan"></i> 応募テンプレート生成フォーム
+                </h2>
+                <p class="text-xs text-gray-400 mt-1">
+                    入力内容に合わせて送信用テキストがリアルタイムで作成されます。入力後「コピー」してX（旧Twitter）のDM等に貼り付けてご応募ください。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Form Inputs -->
+                <form id="mixForm" oninput="updatePreview()" class="space-y-4">
+                    <div>
+                        <label for="vocalName" class="block text-xs font-semibold text-gray-300 mb-1">
+                            活動名 (名義) <span class="text-rose-400">*</span>
+                        </label>
+                        <input type="text" id="vocalName" placeholder="例: 歌い手 太郎" 
+                            class="w-full bg-cyber-dark border border-cyber-border rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyber-purple transition">
+                    </div>
+
+                    <div>
+                        <label for="contactInfo" class="block text-xs font-semibold text-gray-300 mb-1">
+                            連絡先 (X/旧Twitter ID や Mail) <span class="text-rose-400">*</span>
+                        </label>
+                        <input type="text" id="contactInfo" placeholder="例: @your_handle または mail@example.com" 
+                            class="w-full bg-cyber-dark border border-cyber-border rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyber-purple transition">
+                    </div>
+
+                    <div>
+                        <label for="songTitle" class="block text-xs font-semibold text-gray-300 mb-1">
+                            楽曲名・本家様URL <span class="text-rose-400">*</span>
+                        </label>
+                        <input type="text" id="songTitle" placeholder="例: ○○ / 本家様: https://..." 
+                            class="w-full bg-cyber-dark border border-cyber-border rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyber-purple transition">
+                    </div>
+
+                    <div>
+                        <label for="gigaUrl" class="block text-xs font-semibold text-gray-300 mb-1">
+                            音源URL (ギガファイル便等) <span class="text-rose-400">*</span>
+                        </label>
+                        <input type="url" id="gigaUrl" placeholder="https://gigafile.nu/..." 
+                            class="w-full bg-cyber-dark border border-cyber-border rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyber-purple transition">
+                    </div>
+
+                    <div>
+                        <label for="userMessage" class="block text-xs font-semibold text-gray-300 mb-1">
+                            一言メッセージ (任意)
+                        </label>
+                        <textarea id="userMessage" rows="2" placeholder="キー変更情報やご要望があれば記入してください" 
+                            class="w-full bg-cyber-dark border border-cyber-border rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-cyber-purple transition"></textarea>
+                    </div>
+
+                    <div class="pt-1">
+                        <label class="flex items-start gap-2.5 cursor-pointer select-none">
+                            <input type="checkbox" id="termsCheck" onchange="updatePreview()" class="mt-0.5 rounded border-cyber-border bg-cyber-dark text-cyber-purple focus:ring-cyber-purple">
+                            <span class="text-xs text-gray-300">
+                                納期指定不可・修正受付不可・ブログ掲載許可に同意します <span class="text-rose-400">*</span>
+                            </span>
+                        </label>
+                    </div>
+                </form>
+
+                <!-- Live Generated Text Preview Box -->
+                <div class="flex flex-col h-full space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-cyber-cyan flex items-center gap-1.5">
+                            <i class="fa-solid fa-terminal"></i> 送信用テキストプレビュー
+                        </span>
+                        <span id="validBadge" class="text-[10px] px-2 py-0.5 rounded bg-gray-800 text-gray-400">未完成</span>
+                    </div>
+
+                    <div class="flex-grow bg-cyber-dark border border-cyber-border rounded-xl p-4 font-mono text-xs text-gray-300 overflow-y-auto whitespace-pre-wrap leading-relaxed select-all" id="outputPreview">
+入力内容がここにリアルタイム反映されます...
+                    </div>
+
+                    <button type="button" onclick="copyFormattedText()" 
+                        class="w-full bg-gradient-to-r from-cyber-purple to-cyber-cyan hover:opacity-90 text-white font-bold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg glow-accent transition active:scale-98">
+                        <i class="fa-regular fa-copy text-base"></i>
+                        テンプレートをコピーする
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-cyber-border bg-cyber-card/50 py-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto px-4 space-y-1">
+            <p>&copy; MIX LAB - Practice & Performance Log</p>
+            <p class="text-[11px] text-gray-600">歌ってみたMIX 練習用音源募集テンプレート</p>
+        </div>
+    </footer>
+
+    <!-- Notification Toast Popup -->
+    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-20 opacity-0 transition-all duration-300 bg-cyber-purple text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 z-50 pointer-events-none">
+        <i id="toastIcon" class="fa-solid fa-check"></i>
+        <span id="toastMsg">通知メッセージ</span>
+    </div>
+
+    <script>
+        // Copy text helper logic using standard document.execCommand for iFrame compatibility
+        function copyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            textArea.style.top = "0";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            let successful = false;
+            try {
+                successful = document.execCommand('copy');
+            } catch (err) {
+                console.error('Copy failed', err);
+            }
+            document.body.removeChild(textArea);
+            return successful;
+        }
+
+        // Show toast notification
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            const toastIcon = document.getElementById('toastIcon');
+
+            toastMsg.innerText = message;
+            if (isError) {
+                toast.classList.remove('bg-cyber-purple');
+                toast.classList.add('bg-rose-600');
+                toastIcon.className = 'fa-solid fa-exclamation-circle';
+            } else {
+                toast.classList.remove('bg-rose-600');
+                toast.classList.add('bg-cyber-purple');
+                toastIcon.className = 'fa-solid fa-check';
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // Update preview dynamically on input
+        function updatePreview() {
+            const vocalName = document.getElementById('vocalName').value.trim() || '（未入力）';
+            const contactInfo = document.getElementById('contactInfo').value.trim() || '（未入力）';
+            const songTitle = document.getElementById('songTitle').value.trim() || '（未入力）';
+            const gigaUrl = document.getElementById('gigaUrl').value.trim() || '（未入力）';
+            const userMessage = document.getElementById('userMessage').value.trim() || 'なし';
+            const termsCheck = document.getElementById('termsCheck').checked;
+
+            const previewText = 
+`【歌ってみたMIX練習音源 応募】
+
+■ 活動名: ${vocalName}
+■ 連絡先: ${contactInfo}
+■ 楽曲名・URL: ${songTitle}
+■ 音源データURL: ${gigaUrl}
+■ メッセージ:
+${userMessage}
+
+-----------------------------------
+※「納期指定不可」「修正受付不可」「ブログ・実績等への掲載許可」の重要条件に同意して応募します。`;
+
+            document.getElementById('outputPreview').innerText = previewText;
+
+            const badge = document.getElementById('validBadge');
+            const isValid = document.getElementById('vocalName').value.trim() &&
+                            document.getElementById('contactInfo').value.trim() &&
+                            document.getElementById('songTitle').value.trim() &&
+                            document.getElementById('gigaUrl').value.trim() &&
+                            termsCheck;
+
+            if (isValid) {
+                badge.className = "text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30";
+                badge.innerText = "準備完了";
+            } else {
+                badge.className = "text-[10px] px-2 py-0.5 rounded bg-gray-800 text-gray-400";
+                badge.innerText = "未入力あり";
+            }
+        }
+
+        // Action when copy button is clicked
+        function copyFormattedText() {
+            const vocalName = document.getElementById('vocalName').value.trim();
+            const contactInfo = document.getElementById('contactInfo').value.trim();
+            const songTitle = document.getElementById('songTitle').value.trim();
+            const gigaUrl = document.getElementById('gigaUrl').value.trim();
+            const termsCheck = document.getElementById('termsCheck').checked;
+
+            if (!vocalName || !contactInfo || !songTitle || !gigaUrl) {
+                showToast('必須項目（*）をすべて入力してください', true);
+                return;
+            }
+
+            if (!termsCheck) {
+                showToast('重要条件への同意チェックが必要です', true);
+                return;
+            }
+
+            const content = document.getElementById('outputPreview').innerText;
+            if (copyTextToClipboard(content)) {
+                showToast('応募用テキストをコピーしました！DM等に貼り付けてお送りください。');
+            } else {
+                showToast('コピーに失敗しました', true);
+            }
+        }
+
+        // Initialize preview on page load
+        window.onload = function() {
+            updatePreview();
+        };
+    </script>
+</body>
+</html>
